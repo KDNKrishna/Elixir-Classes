@@ -25,3 +25,16 @@ defmodule NameBadge do
     end
   end
 end
+
+#def print(nil, name, department) do
+#    name <> " - " <> String.upcase(department)
+#  end
+
+#  @doc """
+#  It should take an id, name, and a department. It should return the badge label, with the department name in uppercase. Also when the id is missing, it should print a badge without it.
+#  """
+#  @spec print(non_neg_integer(), String.t(), String.t()) :: String.t()
+#  def print(id, name, department) do
+#    "[#{id}]" <> " - " <> name <> " - " <> String.upcase(department)
+#    end
+#  end
