@@ -26,6 +26,8 @@ defmodule NameBadge do
   end
 end
 
+#########USING PATTERN MATCHING #########
+
 #def print(nil, name, department) do
 #    name <> " - " <> String.upcase(department)
 #  end
@@ -36,5 +38,14 @@ end
 #  @spec print(non_neg_integer(), String.t(), String.t()) :: String.t()
 #  def print(id, name, department) do
 #    "[#{id}]" <> " - " <> name <> " - " <> String.upcase(department)
-#    end
+#  end
+
+#########USING GUARD #########
+#@spec print(non_neg_integer(), String.t(), String.t()) :: String.t()
+#  def print(id, name, department) when is_nil(id) do
+#      name <> " - " <> String.upcase(department)
+#  end
+
+#  def print(id, name, department) do
+#    "[#{id}]" <> " - " <> name <> " - " <> String.upcase(department)
 #  end
