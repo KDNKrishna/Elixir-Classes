@@ -1,4 +1,5 @@
 defmodule LibraryFees do
+  @spec datetime_from_string(String.t()) :: Integer
   def datetime_from_string(string) do
     # Please implement the datetime_from_string/1 function
     date = String.slice(string, 0..9)
