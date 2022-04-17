@@ -4,7 +4,7 @@ defmodule BirdCount do
   """
 
   @doc """
-   It should take a list of daily bird counts and return today's count. If the list is empty, it should return nil
+   This function should take a list of daily bird counts and return today's count. If the list is empty, it should return nil
   """
   @spec today(List) :: Integer
   def today(list) do
