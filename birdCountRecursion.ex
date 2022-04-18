@@ -21,7 +21,7 @@ defmodule BirdCount do
   end
 
   @doc """
-   It should take a list of daily bird counts and increment the today's count by 1.
+   This function should take a list of daily bird counts and increment the today's count by 1.
   """
   @spec increment_day_count(List) :: List
   def increment_day_count(list) do
