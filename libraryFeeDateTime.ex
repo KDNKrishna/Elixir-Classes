@@ -27,10 +27,24 @@ defmodule LibraryFees do
 
   def days_late(planned_return_date, actual_return_datetime) do
     # Please implement the days_late/2 function
+    final = Date.diff(actual_return_datetime, planned_return_date)
+    if final == 0 or final < 0 do
+      0
+    else
+      final
+    end
+
   end
 
   def monday?(datetime) do
     # Please implement the monday?/1 function
+    date = NaiveDateTime.to_date(datetime)
+    latest = Date.day_of_week(date)
+    if latest == 1 do
+      true
+    else
+      false
+    end
   end
 
   def calculate_late_fee(checkout, return, rate) do
