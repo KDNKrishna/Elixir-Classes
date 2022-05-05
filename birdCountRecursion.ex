@@ -1,6 +1,6 @@
 defmodule BirdCount do
   @moduledoc """
-  You're an avid bird watcher that keeps track of how many birds have visited your garden on any given day
+  You're the avid bird watcher that keeps track of how many birds have visited your garden on any given day
   """
 
   @doc """
