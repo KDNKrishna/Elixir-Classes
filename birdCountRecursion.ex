@@ -34,9 +34,9 @@ defmodule BirdCount do
   @spec has_day_without_birds?(List) :: boolean()
   def has_day_without_birds?([h | t]), do: h == 0 or has_day_without_birds?(t)
 
-  @doc """
-  It should take a list of daily bird counts and return the total number that visited your garden
-  """
+  #@doc """
+  #It should take a list of daily bird counts and return the total number that visited your garden
+  #"""
   @spec total(List) :: Integer
   def total([]), do: 0
 
